@@ -102,10 +102,8 @@ def executeBabunCore() {
     File workingDir = new File(getRoot(), module);
     String root = getRoot().absolutePath
     String cygwin = new File(getTarget(), "babun-cygwin/cygwin").absolutePath
-    String out = new File(getTarget(), "${module}").absolutePath    
-    String branch = getenv("babun_branch") ? getenv("babun_branch") : "release"
-    println "Taking babun branch [${branch}]"
-    def command = ["groovy.bat", "core.groovy", root, cygwin, out, branch]
+    String out = new File(getTarget(), "${module}").absolutePath
+    def command = ["groovy.bat", "core.groovy", root, cygwin, out]
     executeCmd(command, workingDir, TEN_MINUTES)
 }
 
