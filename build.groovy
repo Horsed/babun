@@ -16,6 +16,8 @@ def execute() {
         doClean()
     } else if (mode == "cygwin") {
         doCygwin()
+    } else if (mode == "core") {
+        executeBabunCore()
     } else if (mode == "package") {
         doPackage()
     } else if (mode == "release") {
@@ -25,7 +27,7 @@ def execute() {
 }
 
 def checkArguments() {
-    if (this.args.length != 1 || !this.args[0].matches("clean|cygwin|package|release")) {
+    if (this.args.length != 1 || !this.args[0].matches("clean|cygwin|core|package|release")) {
         err.println "Usage: build.groovy <clean|cygwin|package|release>"
         exit(-1)
     }
