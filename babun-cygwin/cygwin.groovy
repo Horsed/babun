@@ -75,6 +75,7 @@ def installCygwin(File cygwinInstaller, File repoFolder, File cygwinFolder, File
             "--no-shortcuts " +
             "--no-startmenu " +
             "--no-desktop " +
+            "--wait " +
             "--packages " + pkgs
     println installCommand
     executeCmd(installCommand, 10)
