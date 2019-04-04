@@ -91,5 +91,4 @@ endif
 " SYNTAX HIGHLIGHTING:
 set t_Co=256
 syntax on
-silent! colorscheme ir_black
 set bs=2
