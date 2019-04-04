@@ -1,19 +1,6 @@
-= Babun - a windows shell you will love [PROJECT DISCONTINUED]
+= Babun - a windows shell you will love
 
 Would you like to use a linux-like console on a Windows host without a lot of fuzz? Try out babun!
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-// THIS DOCUMENT WAS GENERATED. DO NOT EDIT IT.\n
-
 
 Have a look at a 2 minutes long screencast by https://twitter.com/tombujok[@tombujok]: http://vimeo.com/95045348
 
@@ -27,13 +14,15 @@ video::95045348[vimeo, width=827, height=465, align="center"]
 
 == Installation
 
-Just download the dist file from http://babun.github.io, unzip it and run the install.bat script. After a few minutes babun starts automatically.
+Just download the dist file from https://github.com/Horsed/babun/releases, unzip it and run the install.bat script. After a few minutes babun starts automatically.
 The application will be installed to the `%USER_HOME%\.babun` directory. Use the '/target' option to install babun to a custom directory.
 
 NOTE: There is no interference with existing Cygwin installation
 
 NOTE: You may have "whitespace" chars in your username - it is not recommended by Cygwin though http://cygwin.com/faq.html#faq.setup.name-with-space[FAQ]
 
+=== Nightly builds
+Get them here: http://40.114.204.90/
 
 == Features in 10 seconds
 
