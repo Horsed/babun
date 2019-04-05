@@ -6,8 +6,10 @@ set "HH=%dt:~8,2%" & set "Min=%dt:~10,2%" & set "Sec=%dt:~12,2%"
 set "datestamp=%YYYY%%MM%%DD%" & set "timestamp=%HH%%Min%%Sec%"
 set "fullstamp=%YYYY%-%MM%-%DD%_%HH%-%Min%-%Sec%"
 
-copy target\babun-dist\babun*.zip %HOMEPATH%\babun-nightly
-
-cd %HOMEPATH%\babun-nightly
+cd target\babun-dist
 
 ren babun-*.zip babun-*-%fullstamp%.zip
+
+del %HOMEPATH%\babun*.zip
+
+copy babun*.zip %HOMEPATH%\babun-nightly
