@@ -61,6 +61,11 @@ def installCore(File rootFolder, File outputFolder) {
     //String checkout = "git --git-dir='${src}/.git' --work-tree='${src}' checkout ${babunBranch}"    
     //executeCmd("${bash} -c \"${sslVerify} 'false'; ${clone}; ${checkout}; ${sslVerify} 'true';\"", 5)
 	
+	// copy babun.version
+    new AntBuilder().copy(todir: "${outputFolder.absolutePath}/cygwin/usr/local/etc/babun/source", quiet: true) {
+        fileset(dir: "${rootFolder.absolutePath}/babun.version", defaultexcludes:"no")
+    }
+	
 	// copy babun-core
     new AntBuilder().copy(todir: "${outputFolder.absolutePath}/cygwin/usr/local/etc/babun/source/babun-core", quiet: true) {
         fileset(dir: "${rootFolder.absolutePath}/babun-core", defaultexcludes:"no")
